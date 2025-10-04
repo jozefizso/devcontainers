@@ -1,0 +1,21 @@
+name: smoke test
+
+on: 
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: test
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v5
+
+    - name: test
+      uses: ./.github/actions/smoke-test
+      with:
+        image: php

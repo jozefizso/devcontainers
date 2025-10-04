@@ -1,0 +1,23 @@
+name: 'run container tests'
+
+inputs:
+  image:
+    description: 'Name of the container to test'
+    required: true
+
+runs:
+  using: composite
+
+  steps:
+    - name: checkout
+      uses: actions/checkout@v5
+      with:
+        path: '__build'
+
+    - name: build
+      shell: bash
+      run: ${{ github.action_path }}/build.sh ${{ inputs.image }}
+
+    - name: test
+      shell: bash
+      run: ${{ github.action_path }}/test.sh  ${{ inputs.image }}
