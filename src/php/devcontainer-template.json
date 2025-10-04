@@ -1,0 +1,12 @@
+{
+    "id": "php",
+    "version": "1.0.0",
+    "name": "PHP 5.6 development container",
+    "description": "Development container for legacy PHP 5.6 applications.",
+    "documentationURL": "https://github.com/jozefizso/devcontainers",
+    "licenseURL": "https://github.com/jozefizso/devcontainers/blob/main/LICENSE",
+    "options": {},
+    "platforms": [
+        "Any"
+    ]
+}

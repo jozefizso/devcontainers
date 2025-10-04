@@ -1,0 +1,20 @@
+{
+	"name": "PHP 5.6",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	// ?? Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+	// "features": {},
+
+	// ?? Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		8000
+	],
+
+	// ?? Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": ""
+
+	// ?? Configure tool-specific properties.
+	// "customizations": {}
+}
